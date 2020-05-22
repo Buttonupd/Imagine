@@ -39,7 +39,7 @@ def get_image_by_id(request):
 
     except DoesNotExist:
         raise Http404()
-    return render(request, 'image.html', ['image': image])
+    return render(request, 'image.html', {'image': image})
 
 
 
