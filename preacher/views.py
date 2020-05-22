@@ -17,3 +17,20 @@ def home(request):
         return render(request, 'all-images.html', {'name':name, 'images':images, 'cat':cat})
     return render(request, 'all-images.html', {'images': images, 'category':category, 'location': location} )
 
+
+
+def search_results(request):
+    
+    if 'categories' in request.GET and request.GET['categories']:
+        search_images = request.GET.get('categories')
+        searched_images = Image.search_by_category(search_images)
+        message = f"{search_images}"
+
+        return render(request, 'search.html', {'message':message, 'images': searched_images})
+
+    
+    else:
+        message = 'you have to search'
+        return render(request, 'search.html', {'message': message})
+
+
