@@ -1,1 +1,1 @@
-web: gunicorn bigtures.wsgi
+web: gunicorn bigtures.wsgi --log -
