@@ -1,1 +1,1 @@
-web: gunicorn preacher.wsgi --log -
+web: gunicorn bigtures.wsgi --log -

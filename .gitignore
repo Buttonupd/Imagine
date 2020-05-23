@@ -5,3 +5,5 @@ env/
 *.log
 *.pot
 db.sqlite3
+*.pyc
+local_settings.py
