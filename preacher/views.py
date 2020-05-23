@@ -15,7 +15,7 @@ def home(request):
         cat = request.GET.get('categories')
         images = Image.view_category(cat)
         return render(request, 'all-images.html', {'name':name, 'images':images, 'cat':cat})
-    return render(request, 'all-images.html', {'images': images, 'category':category, 'location': location} )
+    return render(request,"all-images.html",{"images":images,"location":location,"category":category})
 
 
 
