@@ -4,6 +4,5 @@ env/
 .vscode
 *.log
 *.pot
-db.sqlite3
 *.pyc
 local_settings.py
