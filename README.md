@@ -1,6 +1,6 @@
 # Imagine Gallery
 
-![MyGallery](/static/img/md.jpg)
+![gallery](/static/img/md.jpg)
 
 ## Built By [Dan Kariuki](https://github.com/Buttonupd/)
 
@@ -48,14 +48,14 @@ Admin should:
 * In your terminal:
 
         $ git clone https://github.com/Buttonupd/Imagine
-        $ cd MyGallery
+        $ cd gallery
 
 ## Running the Application
 * Creating the virtual environment
 
         $ Virtualenv env(* 'env is the name of the enviroment')
         $ source env/bin/activate
-        $ curl https://bootstrap.pypa.io/get-pip.py | python
+        
 
 * Installing Django and other Modules
 
@@ -75,10 +75,5 @@ Admin should:
 * Django Framework
 * Postgresql Database
 
-## License
-
-Copyright (c) 2020 Dan Kariuki
-
-------------
 
 
